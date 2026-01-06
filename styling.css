@@ -1,0 +1,133 @@
+/* ===== RESET / GLOBAL FIXES ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  font-size: 16px; /* prevents mobile zoom */
+}
+
+/* ===== COMMON CONTAINER ===== */
+.container {
+  width: 100%;
+  max-width: 380px;
+  margin: 60px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+/* ===== HEADINGS ===== */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+}
+
+/* ===== FORM INPUTS ===== */
+input:not([type="radio"]) {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  font-size: 16px; /* IMPORTANT for mobile */
+}
+
+/* ===== BUTTON ===== */
+button {
+  width: 100%;
+  padding: 12px;
+  background: #1976d2;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #125aa3;
+}
+
+/* ===== ERROR TEXT ===== */
+.error {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* ===== EXAM QUESTIONS ===== */
+.question-block {
+  margin-bottom: 22px;
+}
+
+/* ===== OPTION LABEL ===== */
+.option-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 6px 0;
+  cursor: pointer;
+  line-height: 1.4;
+}
+
+/* ===== RADIO BUTTON FIX ===== */
+.option-label input[type="radio"] {
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+/* ===== OPTION TEXT ===== */
+.option-label span {
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== ADMIN TABLE ===== */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 10px;
+  min-width: 360px; /* prevents squeeze */
+}
+
+th, td {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+th {
+  background: #1976d2;
+  color: white;
+}
+
+/* ===== MOBILE OPTIMIZATION ===== */
+@media (max-width: 600px) {
+
+  .container {
+    margin: 40px 12px;
+    padding: 18px;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .option-label {
+    gap: 12px; /* better tap spacing */
+    font-size: 15px;
+  }
+
+  .option-label input[type="radio"] {
+    transform: scale(1.25); /* bigger touch target */
+  }
+}

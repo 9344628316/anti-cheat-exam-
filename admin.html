@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Panel</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/styling.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Add Question</h2>
+
+  <label>Question</label>
+  <input id="question">
+
+  <label>Option A</label>
+  <input id="opt1">
+
+  <label>Option B</label>
+  <input id="opt2">
+
+  <label>Option C</label>
+  <input id="opt3">
+
+  <label>Option D</label>
+  <input id="opt4">
+
+  <label>Correct Option Index (0–3)</label>
+  <input id="correctIndex" type="number" min="0" max="3">
+
+  <button onclick="addQuestion()">Add Question</button>
+</div>
+
+<div class="container">
+  <h2>Exam Results</h2>
+
+  <!-- ✅ MOBILE FIX -->
+  <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Score</th>
+          <th>Cheat Count</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody id="results"></tbody>
+    </table>
+  </div>
+</div>
+
+<script type="module" src="js/admin.js"></script>
+</body>
+</html>
