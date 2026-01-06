@@ -1,2 +1,2 @@
-# anti-cheat-exam-
+# anti-cheat-exam
 Online anti-cheat exam website
