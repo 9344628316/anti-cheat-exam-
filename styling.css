@@ -52,7 +52,7 @@ button:hover {
   background: #125aa3;
 }
 
-/* ===== ERROR TEXT ===== */
+# ERROR TEXT 
 .error {
   color: red;
   text-align: center;
