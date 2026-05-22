@@ -3,7 +3,7 @@ import { getAuth } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth
 import { getFirestore } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBQGbAxxbz0D1ij9z1uA9x1qxUw-3WhOWs",
+  apiKey: "use your apikey",
   authDomain: "anticheatexam-fdb43.firebaseapp.com",
   projectId: "anticheatexam-fdb43",
   storageBucket: "anticheatexam-fdb43.appspot.com",
