@@ -1,4 +1,4 @@
-/* ===== RESET / GLOBAL FIXES ===== */
+# RESET / GLOBAL FIXES 
 * {
   box-sizing: border-box;
 }
@@ -10,7 +10,7 @@ body {
   font-size: 16px; /* prevents mobile zoom */
 }
 
-/* ===== COMMON CONTAINER ===== */
+# COMMON CONTAINER 
 .container {
   width: 100%;
   max-width: 380px;
@@ -21,14 +21,14 @@ body {
   box-shadow: 0 0 15px rgba(0,0,0,0.1);
 }
 
-/* ===== HEADINGS ===== */
+# HEADINGS 
 h2 {
   text-align: center;
   margin-bottom: 20px;
   font-size: 1.4rem;
 }
 
-/* ===== FORM INPUTS ===== */
+# FORM INPUTS 
 input:not([type="radio"]) {
   width: 100%;
   padding: 12px;
@@ -36,7 +36,7 @@ input:not([type="radio"]) {
   font-size: 16px; /* IMPORTANT for mobile */
 }
 
-/* ===== BUTTON ===== */
+# BUTTON 
 button {
   width: 100%;
   padding: 12px;
@@ -59,12 +59,12 @@ button:hover {
   margin-top: 10px;
 }
 
-/* ===== EXAM QUESTIONS ===== */
+# EXAM QUESTIONS 
 .question-block {
   margin-bottom: 22px;
 }
 
-/* ===== OPTION LABEL ===== */
+# OPTION LABEL 
 .option-label {
   display: flex;
   align-items: flex-start;
@@ -74,19 +74,19 @@ button:hover {
   line-height: 1.4;
 }
 
-/* ===== RADIO BUTTON FIX ===== */
+# RADIO BUTTON FIX 
 .option-label input[type="radio"] {
   margin-top: 3px;
   flex-shrink: 0;
 }
 
-/* ===== OPTION TEXT ===== */
+# OPTION TEXT 
 .option-label span {
   margin: 0;
   padding: 0;
 }
 
-/* ===== ADMIN TABLE ===== */
+# ADMIN TABLE 
 .table-wrapper {
   overflow-x: auto;
 }
@@ -110,7 +110,7 @@ th {
   color: white;
 }
 
-/* ===== MOBILE OPTIMIZATION ===== */
+# MOBILE OPTIMIZATION 
 @media (max-width: 600px) {
 
   .container {
